@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DAA Learning videos</title>
+	<style>
+	h1 {
+		color:silver;
+		font-size: 4rem;
+		text-align: center;
+		}
+	.vertical-menu{
+		
+		height:500px;
+	
+	  overflow-y: auto;
+		
+		
+	}
+
+	
+	@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+	
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif
+
+	
+  
+}
+nav{
+  position: absolute;
+  top: 22%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background: #1b1b1b;
+  width: 400px;
+  line-height: 40px;
+  padding: 8px 25px;
+  border-radius: 5px;
+	overflow-y: auto;
+	height: 500px;
+	margin-top: 219px;
+
+	
+	
+	
+}
+nav label{
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  display:'';
+  cursor: pointer;
+	
+}
+.button span{
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+	
+}
+.button span.rotate{
+  transform: rotate(-180deg);
+	
+}
+nav ul{
+  position: absolute;
+  background: #1b1b1b;
+  list-style: none;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+	
+	
+}
+[id^=btn]:checked + ul{
+  display: block;
+}
+nav .menu:before{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: #1b1b1b;
+  right: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+	
+	
+}
+nav ul li{
+  line-height: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+	
+}
+nav ul li label{
+  font-size: 18px;
+	
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+	
+}
+nav ul li a:hover,
+nav ul li label:hover{
+  color: cyan;
+	
+}
+nav ul ul{
+  position: static;
+	
+}
+nav ul ul li{
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none;
+	
+}
+nav ul ul li a{
+  color: #e6e6e6;
+  font-size: 17px;
+	
+}
+nav ul li span{
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 0 10px;
+  transition: 0.5s;
+	
+}
+nav ul li span.rotate{
+  transform: rotate(-180deg);
+	
+}
+input{
+  display:none;
+
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking-button {
+  animation: blink 1s infinite;
+}
+
+	</style>
+</head>
+
+<body style="background-color: black">
+	<h1  class="h1b">Engineering Hub</h1>
+
+<div>	
+	<div style="display: grid;
+	margin-left: 50px;
+	
+	grid-template-rows: 500px 0px ;
+	grid-template-columns: 900px 500px; 
+	">
+	<div style="background-color:green; margin-top: 50px; "><img src="	DAA.png">
+	</div>
+	
+	<div   class="vertical-menu " >
+		
+		<nav>
+		
+  
+
+
+			<label for="btn" class="button"  >DAA<button class="blinking-button">click</button>
+			<span class="fas fa-caret-down"></span>
+			</label>
+			
+			<input type="checkbox" id="btn">
+			<ul class="menu" >
+				 <li >
+				 <label for="btn-1" class="first">UNIT-1
+						<span class="fas fa-caret-down"></span>
+						</label>
+						<input type="checkbox" id="btn-1">
+						<ul>
+						<li ><h3 style="color: blue; "> Introduction</h3-></li>
+							<li><a href="#">1.Well-posed learning problems</a></li>
+							<li><a href="#"> 2.Designing a learning system</a></li>
+							<li><a href="#">3. Perspectives and issues in 
+							 machine learning</a></li>
+							<li><h3 style="color: blue;">Concept learning and the general to specific ordering</h3</li>
+							<li><a href="#">6.A concept learning task</a></li>
+							<li><a href="#">7.Concept learning as search</a></li>
+							<li><a href="#">8.Find-S: finding a maximally specific hypothesis</a></li>
+							<li><a href="#">9.Version spaces and the candidate elimination algorithm</a></li>
+							<li><a href="#">10.Remarks on version spaces and candidate elimination</a></li>
+							<li><a href="#">11.Inductive bias</a></li>
+							<!-- Decision Tree Learning – Introduction, decision tree representation, appropriate problems for decision 
+tree learning, the basic decision tree learning algorithm, hypothesis space search in decision tree 
+learning, inductive bias in decision tree learning, issues in decision tree learning
+-->           <li><h3 style="color: blue;">Decision Tree Learning</h3</li>
+						 <li><a href="#">12.Decision tree representation</a></li>
+						 <li><a href="#">13.Appropriate problems for decision tree learning</a></li>
+						 <li><a href="#">14.The basic decision tree learning algorithm</a></li>
+						 <li><a href="#">15.Hypothesis space search in decision tree learning</a></li>
+						 <li><a href="#">16.Inductive bias in decision tree learning</a></li>
+						 <li><a href="#">17.Issues in decision tree learning</a></li>
+						</ul>
+				 </li>
+				 <li>
+						<label for="btn-2" class="second">UNIT-2
+						<span class="fas fa-caret-down"></span>
+						</label>
+						<input type="checkbox" id="btn-2">
+						<ul>
+							 <li><a href="#">Link-1</a></li>
+							 <li ><h3 style="color: blue; "> Introduction</h3-></li>
+								<li><a href="#">1.Well-posed learning problems</a></li>
+								<li><a href="#"> 2.Designing a learning system</a></li>
+								<li><a href="#">3. Perspectives and issues in 
+								 machine learning</a></li>
+								<li><h3 style="color: blue;">Concept learning and the general to specific ordering</h3</li>
+								<li><a href="#">6.A concept learning task</a></li>
+								<li><a href="#">7.Concept learning as search</a></li>
+								<li><a href="#">8.Find-S: finding a maximally specific hypothesis</a></li>
+								<li><a href="#">9.Version spaces and the candidate elimination algorithm</a></li>
+								<li><a href="#">10.Remarks on version spaces and candidate elimination</a></li>
+								<li><a href="#">11.Inductive bias</a></li>
+								<!-- Decision Tree Learning – Introduction, decision tree representation, appropriate problems for decision 
+	tree learning, the basic decision tree learning algorithm, hypothesis space search in decision tree 
+	learning, inductive bias in decision tree learning, issues in decision tree learning
+	-->           <li><h3 style="color: blue;">Decision Tree Learning</h3</li>
+							 <li><a href="#">12.Decision tree representation</a></li>
+							 <li><a href="#">13.Appropriate problems for decision tree learning</a></li>
+							 <li><a href="#">14.The basic decision tree learning algorithm</a></li>
+							 <li><a href="#">15.Hypothesis space search in decision tree learning</a></li>
+							 <li><a href="#">16.Inductive bias in decision tree learning</a></li>
+							 <li><a href="#">17.Issues in decision tree learning</a></li>
+							
+						</ul>
+					
+						
+				 </li>
+				 <li>
+						<label for="btn-3" class="three">UNIT-3
+						<span class="fas fa-caret-down"></span>
+						</label>
+						<input type="checkbox" id="btn-3">
+						<ul>
+							 <li><a href="#">Web Design</a></li>
+							 <li><a href="#">App Design</a></li>
+							 <li ><h3 style="color: blue; "> Introduction</h3-></li>
+								<li><a href="#">1.Well-posed learning problems</a></li>
+								<li><a href="#"> 2.Designing a learning system</a></li>
+								<li><a href="#">3. Perspectives and issues in 
+								 machine learning</a></li>
+								<li><h3 style="color: blue;">Concept learning and the general to specific ordering</h3</li>
+								<li><a href="#">6.A concept learning task</a></li>
+								<li><a href="#">7.Concept learning as search</a></li>
+								<li><a href="#">8.Find-S: finding a maximally specific hypothesis</a></li>
+								<li><a href="#">9.Version spaces and the candidate elimination algorithm</a></li>
+								<li><a href="#">10.Remarks on version spaces and candidate elimination</a></li>
+								<li><a href="#">11.Inductive bias</a></li>
+								<!-- Decision Tree Learning – Introduction, decision tree representation, appropriate problems for decision 
+	tree learning, the basic decision tree learning algorithm, hypothesis space search in decision tree 
+	learning, inductive bias in decision tree learning, issues in decision tree learning
+	-->           <li><h3 style="color: blue;">Decision Tree Learning</h3</li>
+							 <li><a href="#">12.Decision tree representation</a></li>
+							 <li><a href="#">13.Appropriate problems for decision tree learning</a></li>
+							 <li><a href="#">14.The basic decision tree learning algorithm</a></li>
+							 <li><a href="#">15.Hypothesis space search in decision tree learning</a></li>
+							 <li><a href="#">16.Inductive bias in decision tree learning</a></li>
+							 <li><a href="#">17.Issues in decision tree learning</a></li>
+						</ul>
+				 </li>
+				 <li>
+				 <label for="btn-4" class="four">UNIT-4
+						<span class="fas fa-caret-down"></span>
+						</label>
+						<input type="checkbox" id="btn-4">
+						<ul>
+							<li ><h3 style="color: blue; "> Introduction</h3-></li>
+								<li><a href="#">1.Well-posed learning problems</a></li>
+								<li><a href="#"> 2.Designing a learning system</a></li>
+								<li><a href="#">3. Perspectives and issues in 
+								 machine learning</a></li>
+								<li><h3 style="color: blue;">Concept learning and the general to specific ordering</h3</li>
+								<li><a href="#">6.A concept learning task</a></li>
+								<li><a href="#">7.Concept learning as search</a></li>
+								<li><a href="#">8.Find-S: finding a maximally specific hypothesis</a></li>
+								<li><a href="#">9.Version spaces and the candidate elimination algorithm</a></li>
+								<li><a href="#">10.Remarks on version spaces and candidate elimination</a></li>
+								<li><a href="#">11.Inductive bias</a></li>
+								<!-- Decision Tree Learning – Introduction, decision tree representation, appropriate problems for decision 
+	tree learning, the basic decision tree learning algorithm, hypothesis space search in decision tree 
+	learning, inductive bias in decision tree learning, issues in decision tree learning
+	-->           <li><h3 style="color: blue;">Decision Tree Learning</h3</li>
+							 <li><a href="#">12.Decision tree representation</a></li>
+							 <li><a href="#">13.Appropriate problems for decision tree learning</a></li>
+							 <li><a href="#">14.The basic decision tree learning algorithm</a></li>
+							 <li><a href="#">15.Hypothesis space search in decision tree learning</a></li>
+							 <li><a href="#">16.Inductive bias in decision tree learning</a></li>
+							 <li><a href="#">17.Issues in decision tree learning</a></li>
+						</ul>
+					</li>
+					<li>
+						<label for="btn-5" class="five">UNIT-5
+							 <span class="fas fa-caret-down"></span>
+							 </label>
+							 <input type="checkbox" id="btn-5">
+							 <ul>
+								<li ><h3 style="color: blue; "> Introduction</h3-></li>
+							<li><a href="#">1.Well-posed learning problems</a></li>
+							<li><a href="#"> 2.Designing a learning system</a></li>
+							<li><a href="#">3. Perspectives and issues in 
+							 machine learning</a></li>
+							<li><h3 style="color: blue;">Concept learning and the general to specific ordering</h3</li>
+							<li><a href="#">6.A concept learning task</a></li>
+							<li><a href="#">7.Concept learning as search</a></li>
+							<li><a href="#">8.Find-S: finding a maximally specific hypothesis</a></li>
+							<li><a href="#">9.Version spaces and the candidate elimination algorithm</a></li>
+							<li><a href="#">10.Remarks on version spaces and candidate elimination</a></li>
+							<li><a href="#">11.Inductive bias</a></li>
+							<!-- Decision Tree Learning – Introduction, decision tree representation, appropriate problems for decision 
+tree learning, the basic decision tree learning algorithm, hypothesis space search in decision tree 
+learning, inductive bias in decision tree learning, issues in decision tree learning
+-->           <li><h3 style="color: blue;">Decision Tree Learning</h3</li>
+						 <li><a href="#">12.Decision tree representation</a></li>
+						 <li><a href="#">13.Appropriate problems for decision tree learning</a></li>
+						 <li><a href="#">14.The basic decision tree learning algorithm</a></li>
+						 <li><a href="#">15.Hypothesis space search in decision tree learning</a></li>
+						 <li><a href="#">16.Inductive bias in decision tree learning</a></li>
+						 <li><a href="#">17.Issues in decision tree learning</a></li>
+						</ul>
+						</li>   
+			</ul>
+	 </nav>
+	 <!-- This code used to rotate drop icon(-180deg).. -->
+	 <script>
+        $('nav .button').click(function(){
+				$('nav .button span').toggleClass("rotate");
+				
+			   }); 
+				$('nav ul li .first').click(function(){
+					$('nav ul li .first span').toggleClass("rotate");
+				});
+				$('nav ul li .second').click(function(){
+					$('nav ul li .second span').toggleClass("rotate");
+				});
+				$('nav ul li .three').click(function(){
+					$('nav ul li .three span').toggleClass("rotate");
+				});
+				$('nav ul li .four').click(function(){
+					$('nav ul li .four span').toggleClass("rotate");
+				});
+				$('nav ul li .five').click(function(){
+					$('nav ul li .five span').toggleClass("rotate");
+				});
+				
+	 </script>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>

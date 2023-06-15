@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Machine Learning videos</title>
+	<style>
+	h1 {
+		color:silver;
+		font-size: 4rem;
+		text-align: center;
+		}
+	.vertical-menu{
+	
+	  overflow-y: auto;
+		
+		
+	}
+
+	
+	@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+	
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif
+
+	
+  
+}
+nav{
+  position: absolute;
+  top: 22%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background: #1b1b1b;
+  width: 400px;
+  line-height: 40px;
+  padding: 8px 25px;
+  border-radius: 5px;
+	overflow-y: auto;
+	height: 500px;
+	margin-top: 219px;
+
+	
+	
+	
+}
+nav label{
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  display:'';
+  cursor: pointer;
+	
+}
+.button span{
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+	
+}
+.button span.rotate{
+  transform: rotate(-180deg);
+	
+}
+nav ul{
+  position: absolute;
+  background: #1b1b1b;
+  list-style: none;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+	
+	
+}
+[id^=btn]:checked + ul{
+  display: block;
+}
+nav .menu:before{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: #1b1b1b;
+  right: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+	
+	
+}
+nav ul li{
+  line-height: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+	
+}
+nav ul li label{
+  font-size: 18px;
+	
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+	padding-left: -20;
+	
+}
+nav ul li a:hover,
+nav ul li label:hover{
+  color: cyan;
+	
+}
+nav ul ul{
+  position: static;
+	
+}
+nav ul ul li{
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none;
+	
+}
+nav ul ul li a{
+  color: #e6e6e6;
+  font-size: 17px;
+	
+}
+nav ul li span{
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 0 10px;
+  transition: 0.5s;
+	
+}
+nav ul li span.rotate{
+  transform: rotate(-180deg);
+	
+}
+input{
+  display:none;
+
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking-button {
+  animation: blink 1s infinite;
+}
+
+	</style>
+</head>
+
+<body  style=" background-image: url(bodygif.gif); background-size: cover; background-position: center;">
+	<a href="Ml.html"><h1 class="h1b">Engineering Hub</h1></a>
+
+<div>	
+	<div style="display: grid;
+	margin-left: 50px;
+	
+	grid-template-rows: 548px  ;
+	grid-template-columns: 905px;
+	">
+	<div style="background-color:black; margin-top: 50px; ">
+		<iframe src="MAchine.png" name="mltarget" width="905" height="498" scrolling="no" frameborder="1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+	</div>
+	
+	<div   class="vertical-menu " >
+		
+		<nav>
+		
+  
+
+
+			<label for="btn" class="button"  >Machine learning<button style="color: white; background-color: black;" class="blinking-button">click</button>
+			<span class="fas fa-caret-down"></span>
+			</label>
+			
+			<input type="checkbox" id="btn">
+			<ul class="menu" >
+				 <li >
+				 <label for="btn-1" class="first">UNIT-1
+						<span class="fas fa-caret-down"></span>
+						</label>
+						<input type="checkbox" id="btn-1">
+						<ul>
+							 <li ><h3 src="https://www.youtube.com/embed/mNB8NlwhAggmodestbranding=1&controls=0&rel=0&autoplay=1&loop=1" style="color: blue; "> Introduction</h3-></li>
+							 <li><a href="https://www.youtube.com/embed/ItQowHSm9WY?list=PLmAmHQ-_5ySyQeEryrlomrEvOGNYN3TAL&modestbranding=1&controls=1&rel=0&autoplay=1&loop=1" target="mltarget">1.Well-posed learning problems</a></li>
+							 <li><a href="https://www.youtube.com/embed/ngERnNlPyJI?list=PLmAmHQ-_5ySyQeEryrlomrEvOGNYN3TAL&modestbranding=1&controls=1&rel=0&autoplay=1&loop=1" > 2.Designing a learning system</a></li>
+							 <li><a href="https://www.youtube.com/embed/ngERnNlPyJI?list=PLmAmHQ-_5ySyQeEryrlomrEvOGNYN3TAL"target="mltarget" >3. Perspectives and issues in 
+								machine learning</a></li>
+							 <li><h3 style="color: blue;">Concept learning and the general to specific ordering</h3</li>
+							 <li><a href="#">6.A concept learning task</a></li>
+							 <li><a href="#">7.Concept learning as search</a></li>
+							 <li><a href="#">8.Find-S: finding a maximally specific hypothesis</a></li>
+							 <li><a href="#">9.Version spaces and the candidate elimination algorithm</a></li>
+							 <li><a href="#">10.Remarks on version spaces and candidate elimination</a></li>
+							 <li><a href="#">11.Inductive bias</a></li>
+							 <!-- Decision Tree Learning – Introduction, decision tree representation, appropriate problems for decision 
+tree learning, the basic decision tree learning algorithm, hypothesis space search in decision tree 
+learning, inductive bias in decision tree learning, issues in decision tree learning
+ -->           <li><h3 style="color: blue;">Decision Tree Learning</h3</li>
+							<li><a href="#">12.Decision tree representation</a></li>
+							<li><a href="#">13.Appropriate problems for decision tree learning</a></li>
+							<li><a href="#">14.The basic decision tree learning algorithm</a></li>
+							<li><a href="#">15.Hypothesis space search in decision tree learning</a></li>
+							<li><a href="#">16.Inductive bias in decision tree learning</a></li>
+							<li><a href="#">17.Issues in decision tree learning</a></li>
+							
+	             
+						</ul>
+						
+				 </li>
+				 <li>
+						<label for="btn-2" class="second">UNIT-2
+						<span class="fas fa-caret-down"></span>
+						</label>
+						<input type="checkbox" id="btn-2">
+						<ul>
+						
+								 <li ><h3 style="color: blue; "> Artificial Neural Networks-1</h3-></li>
+								<li><a href="#">1.Introduction</a></li>
+								<li><a href="#"> 2.	neural network representation</a></li>
+								<li><a href="#">3.	appropriate problems for neural network learning</a></li>
+								<li><a href="#">4.	perceptions</a></li>
+								<li><a href="#">5.	multilayer networks and the back-propagation algorithm.</a></li>
+
+								<li><h3 style="color: blue;">Artificial Neural Networks-2</h3</li>
+								<li><a href="#">6.	Remarks on the Back-Propagation algorithm</a></li>
+								<li><a href="#">7.	face recognition</a></li>
+								<li><a href="#">8.	advanced topics in artificial neural networks.</a></li>
+								<li><a href="#">9.	Evaluation Hypotheses – Motivation</a></li>
+								<li><a href="#">10.	estimation hypothesis accuracy</a></li>
+								<li><a href="#">11.	basics of sampling theory</a></li>
+
+							 <li><a href="#">12.	a general approach for deriving confidence intervals</a></li>
+							 <li><a href="#">13.	difference in error of two hypotheses</a></li>
+							 <li><a href="#">14.	comparing learning algorithms</a></li>
+
+					 </ul>
+						
+				 </li>
+				 <li>
+						<label for="btn-3" class="three">UNIT-3
+						<span class="fas fa-caret-down"></span>
+						</label>
+						<input type="checkbox" id="btn-3">
+						<ul>
+	
+
+							<li ><h3 style="color: blue; "> Bayesian learning </h3-></li>
+								<li><a href="#">1.	Introduction</a></li>
+								<li><a href="#"> 2.	Bayes theorem</a></li>
+								<li><a href="#">3.	Bayes theorem and concept learning</a></li>
+								
+								<li><a href="#">4.	Maximum Likelihood and least squared error hypotheses</a></li>
+								<li><a href="#">5.	maximum likelihood hypotheses for predicting probabilities</a></li>
+								<li><a href="#">6.	minimum description length principle</a></li>
+								<li><a href="#">7.	Bayes optimal classifier</a></li>
+								<li><a href="#">8.	Gibs algorithm</a></li>
+								<li><a href="#">9.	Naïve Bayes classifier</a></li>
+						  
+							 <li><a href="#">10.	an example: learning to classify text</a></li>
+							 <li><a href="#">11.	Bayesian belief networks</a></li>
+							 <li><a href="#">12.	the EM algorithm</a></li>
+							 <li><h3 style="color: blue;">Computational learning theory </h3</li>
+							 <li><a href="#">13.Introduction</a></li>
+							 <li><a href="#">14.	probably learning an approximately correct hypothesis</a></li>
+							 <li><a href="#">15.	sample complexity for finite hypothesis space</a></li>
+							 <li><a href="#">16.	sample complexity for infinite hypothesis spaces</a></li>
+							 <li><a href="#">17.	the mistake bound model of learning</a></li>
+							 <li><a href="#">18.	Instance-Based Learning- Introduction</a></li>
+							 <li><a href="#">19.	k-nearest neighbour algorithm</a></li>
+							 <li><a href="#">20.	locally weighted regression</a></li>
+							 <li><a href="#">21.	radial basis functions</a></li>
+							 <li><a href="#">22.	case-based reasoning</a></li>
+							 <li><a href="#">23.	remarks on lazy and eager learning</a></li>
+						</ul>
+				 </li>
+				 <li>
+				 <label for="btn-4" class="four">UNIT-4
+						<span class="fas fa-caret-down"></span>
+						</label>
+						<input type="checkbox" id="btn-4">
+						<ul>
+
+
+							<li ><h3 style="color: blue; ">Genetic Algorithms -Motivation
+								</h3-></li>
+								<li><a href="#">1.	Genetic algorithms</a></li>
+								<li><a href="#"> 2.	an illustrative example</a></li>
+								<li><a href="#">3.	hypothesis space search</a></li>
+								<li><a href="#">4.	genetic programming</a></li>
+								<li><a href="#">5.	models of evolution and learning</a></li>
+								<li><a href="#">6.	parallelizing genetic algorithms</a></li>
+								<li><h3 style="color: blue;">Learning Sets of Rules–Introduction
+									</h3</li>
+								<li><a href="#">7.	sequential covering algorithms</a></li>
+								<li><a href="#">8.	learning rule sets: summary</a></li>
+								<li><a href="#">8.Find-S: finding a maximally specific hypothesis</a></li>
+								<li><a href="#">9.	learning First-Order rules</a></li>
+								<li><a href="#">10.Remarks on version spaces and candidate elimination</a></li>
+								<li><a href="#">11.	Induction as inverted deduction</a></li>
+								<li><a href="#">12.	inverting resolution</a></li>
+						    <li><h3 style="color: blue;">Reinforcement Learning –introduction</h3</li>
+							 <li><a href="#">13.the learning task</a></li>
+							 <li><a href="#">14.Q–learning, non-deterministic</a></li>
+							 <li><a href="#">15.	rewards and actions</a></li>
+							 <li><a href="#">16.	temporal difference learning</a></li>
+							 <li><a href="#">17.	generalizing from examples</a></li>
+							 <li><a href="#">18.	relationship to dynamic programming</a></li>
+						</ul>
+					</li>
+					<li>
+						<label for="btn-5" class="five">UNIT-5
+							 <span class="fas fa-caret-down"></span>
+							 </label>
+							 <input type="checkbox" id="btn-5">
+							 <ul>
+						
+								<li ><h3 style="color: blue; "> Analytical Learning-1</h3-></li>
+									<li><a href="#">1.	Introduction</a></li>
+									<li><a href="#"> 2.	learning with perfect domain theories: PROLOG-EBG</a></li>
+									<li><a href="#">3.	remarks on explanation-based learning</a></li>
+									<li><a href="#">4.	explanation-based learning of search control knowledge</a></li>
+									<li><h3 style="color: blue;">Analytical Learning-2-</h3</li>
+
+									<li><a href="#">5.	Using prior knowledge to alter the search objective</a></li>
+									<li><a href="#">6.	using prior knowledge to augment search operators</a></li>
+
+						      <li><h3 style="color: blue;">Combining Inductive and Analytical Learning</h3</li>
+								 <li><a href="#">7.	Motivation</a></li>
+								 <li><a href="#">8.	inductive-analytical approaches to learning</a></li>
+								 <li><a href="#">9.	using prior knowledge to initialize the hypothesis</a></li>
+								
+							</ul>
+						</li>   
+			</ul>
+	 </nav>
+	 <!-- This code used to rotate drop icon(-180deg).. -->
+	 <script>
+        $('nav .button').click(function(){
+				$('nav .button span').toggleClass("rotate");
+				
+			   }); 
+				$('nav ul li .first').click(function(){
+					$('nav ul li .first span').toggleClass("rotate");
+				});
+				$('nav ul li .second').click(function(){
+					$('nav ul li .second span').toggleClass("rotate");
+				});
+				$('nav ul li .three').click(function(){
+					$('nav ul li .three span').toggleClass("rotate");
+				});
+				$('nav ul li .four').click(function(){
+					$('nav ul li .four span').toggleClass("rotate");
+				});
+				$('nav ul li .five').click(function(){
+					$('nav ul li .five span').toggleClass("rotate");
+				});
+				
+	 </script>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
